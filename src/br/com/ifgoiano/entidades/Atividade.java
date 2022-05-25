@@ -9,11 +9,11 @@ public class Atividade {
     private Long id;
     private String nome;
     private String descricao;
-    private String tipo;
     private BigDecimal preco;
 
-    private List<Participante> participantes = new ArrayList<> (  );
-    private List<BlocoHorario> blocosHorarios = new ArrayList<> (  );
+    private List<Participante> participantes = new ArrayList<> ( );
+    private List<BlocoHorario> blocosHorarios = new ArrayList<> ( );
+    private TipoAtividade tipoAtividade;
 
     public Long getId() {
         return id;
@@ -37,14 +37,6 @@ public class Atividade {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
     }
 
     public BigDecimal getPreco() {
@@ -71,4 +63,11 @@ public class Atividade {
         this.blocosHorarios = blocosHorarios;
     }
 
+    public TipoAtividade getTipoAtividade() {
+        return tipoAtividade;
+    }
+
+    public void setTipoAtividade(TipoAtividade tipoAtividade) {
+        this.tipoAtividade = tipoAtividade;
+    }
 }

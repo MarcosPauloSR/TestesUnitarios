@@ -2,9 +2,6 @@ package br.com.ifgoiano.entidades;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 public class BlocoHorario {
 
@@ -13,7 +10,7 @@ public class BlocoHorario {
     private LocalDateTime horaInicio;
     private LocalDateTime horaFim;
 
-    private List<Atividade> atividades = new ArrayList<> (  );
+    private Atividade atividade = new Atividade ( );
 
     public Long getId() {
         return id;
@@ -47,11 +44,12 @@ public class BlocoHorario {
         this.horaFim = horaFim;
     }
 
-    public List<Atividade> getAtividades() {
-        return atividades;
+    public Atividade getAtividade() {
+        return atividade;
     }
 
-    public void setAtividades(List<Atividade> atividades) {
-        this.atividades = atividades;
+    public void setAtividade(Atividade atividade) {
+        this.atividade = atividade;
     }
+
 }
