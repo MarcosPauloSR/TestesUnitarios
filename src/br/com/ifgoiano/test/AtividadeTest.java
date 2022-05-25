@@ -15,6 +15,11 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class AtividadeTest {
 
+
+    /*
+    * Atividade Marcos Paulo Soares Rezende
+    */
+
     @Test
     public void naoDeveExistirAtividadeSemBlocoHorario() {
         Atividade atividade = new Atividade ( );
